@@ -1,0 +1,83 @@
+.navbar-desktop,
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-item {
+  transition: all 0.39s ease-in-out;
+  margin: 0 2rem;
+  list-style: none;
+}
+
+.nav-item>a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.navbar-mobile {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .navbar-desktop {
+    display: none;
+  }
+
+  #open-menu {
+    margin-right: 2rem;
+  }
+
+  .navbar-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  [data-opened="false"] {
+    display: none;
+  }
+
+  .close {
+    display: flex;
+    justify-content: right;
+    margin: 1.5rem;
+  }
+
+  .nav-section-mobile {
+    transition: all 0.39s linear;
+    background-color: white;
+  }
+
+  .nav-list-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .transparent-bg {
+    /* TODO: add glass-morphism */
+    background-color: transparent;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 2px 2px 55px -9px var(--black);
+  }
+
+  .promo {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .promo>.school-name {
+    margin: 0 1rem;
+    font-size: x-large;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 530px) {
+  span.school-name {
+    display: none;
+  }
+}

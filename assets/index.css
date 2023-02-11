@@ -2,13 +2,6 @@
   color: var(--secondary);
 }
 
-.navbar,
-.nav-section>ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .wrapper-img {
   background-image: url("./images/banner.jpg");
   background-repeat: no-repeat;
@@ -17,24 +10,8 @@
   height: 25rem;
 }
 
-.navbar {
-  background-color: var(--white);
-}
-
-.nav-item>a {
-  text-decoration: none;
-  color: var(--primary-text);
-}
-
-.nav-item {
-  margin: auto 2rem;
-  transition: all 0.39s linear;
-  text-decoration-color: var(--secondary);
-  list-style: none;
-}
-
-.nav-item:hover {
-  text-decoration: underline;
-  text-decoration-color: var(--secondary);
-  text-decoration-thickness: 0.25rem;
+@media (max-width: 1000px) {
+  .wrapper-img {
+    background-size: contain;
+  }
 }

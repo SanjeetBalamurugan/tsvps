@@ -1,5 +1,5 @@
 <?php
-include "./components/navbar.php";
+include "./components/navbar/navbar.php";
 
 ?>
 
@@ -12,13 +12,24 @@ include "./components/navbar.php";
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home - Spice Valley School</title>
   <link rel="stylesheet" href="assets/globals.css">
+  <link rel='stylesheet' href='components/navbar/navbar.css'>
+  <link rel="stylesheet" href="assets/index.media.css">
   <link rel="stylesheet" href="assets/index.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+
 </head>
 
 <body>
   <div class="wrapper-img">
-    <span>Learn from yesterday, live for today, hope for tomorrow.</span>
+    <span class="w-motto">Learn from yesterday,<br> Live for today, <br> Hope for tomorrow.</span>
   </div>
+  <?php include "libs.php" ?>
   <script src="assets/index.js"></script>
 </body>
 
